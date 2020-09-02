@@ -493,7 +493,7 @@ svg {
 	padding: 12%;
 	padding-top: 0.3%;
 	padding-bottom: 0.3%;
-	background: #0077FF;
+	background: #0062FF;
 	color: white;
 	font-size: 20px;
 	border-radius: 3px;
@@ -502,6 +502,15 @@ svg {
 	outline: none!important;
 	opacity:0;
 	transform: translateY(50px);
+}
+@media (max-width: 767px) {
+	.site-item button.info {
+	bottom: 0;
+	}
+	.site-item h2 {
+		padding-top: 0.3em;
+	}
+
 }
 .site-item button.info:hover {
     outline: none!important;
