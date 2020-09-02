@@ -225,12 +225,10 @@ overflow: hidden;
 	font-size: 24px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-left: 3%;
-	padding-right: 80%;
 	max-width: 100%;
 	border-radius:5px;
 	display: block;
-	
+	text-align: center;
 }
 .l-active {
 	color: #0062FF;
@@ -377,6 +375,10 @@ svg {
 	flex-direction: column;
 	justify-content: center;
 	position: relative;
+}
+.content-text h1{
+	font-size: 35px;
+	margin-top: 2%;
 }
 .content-text button {
 	width: 100%;
