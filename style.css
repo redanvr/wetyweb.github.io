@@ -1,5 +1,10 @@
 /*WETYWEB STYLE.CSS Daniel Reabovetchi 28.08.2020*/
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+body, html {
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+}
 *, *:before, *:after {
 	padding: 0;
 	margin: 0;
@@ -16,10 +21,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-body, html {
-	width: 100%;
-	font-family: 'Oswald', sans-serif;
-}
 
 a:active, a:focus { outline: none; }
 
@@ -115,7 +116,8 @@ input:active, textarea:active {outline:none;}
 	padding-bottom: 30px;
 	padding-left: 20px;
 	padding-right: 20px; 
-	font-size:18px;
+	font-size:17px;
+	font-weight: 400;
 	text-decoration: none;
 	color: #333;
 	transition: all 0.2s ease;
@@ -259,6 +261,7 @@ overflow: hidden;
 	display: flex;
 	flex: 1 1 auto;
 	margin: 0px auto;
+
 /* 	background-repeat: no-repeat;
 -webkit-background-size: cover;
 background-size: cover; */
@@ -275,19 +278,21 @@ background-size: cover; */
 	color: #333;
 }
 .content-text {
-	color: #333;
-	text-shadow: 0 0 1px #ECF0F1;
 	max-width: 100%;
 }
 .content-text h1 {
 	padding-left: 0;
-	font-size: 46px;
+	font-size: 40px;
+	color: #0062FF;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 800;
 }
 .content-text h4 {
 	margin:0;
-	font-size: 24px;
+	font-size: 20px;
 	padding-bottom: 3%;
 	color: #212121;
+	font-weight: 400;
 }
 .home-img img{
 	max-width: 20em;
@@ -297,8 +302,8 @@ background-size: cover; */
 .item {
 	display: block;
 	margin-bottom: 3%;
-	font-size: 19px;
-	
+	font-size: 18px;
+	font-weight: 500;
 	color: #304EFE;
 	cursor: default;
 	transition:all 0.3s ease;
@@ -316,22 +321,22 @@ svg {
 }
 .btn-send-me {
 	margin-top:5%;
-	padding: 8%;
-	padding-top: 1%;
-	padding-bottom: 1%;
+	text-align: center;
+	padding-top:1.6%;
+	padding-bottom: 1.6%;
 	background: transparent;
-	color: #333;
-	font-size: 20px;
-	
+	color: #212121;
+	font-size: 18px;
+	font-weight: 500;
 	border-radius: 3px;
-	border: 2px solid #333;
+	border: 2px solid #212121;
 	transition:all 0.2s ease-in;
 	width: 49%;
 }
 .btn-send-me:hover {
 	outline: none;
 	box-shadow: 0;
-	background: #333;
+	background: #212121;
 	transition:all 0.2s ease-in;
 	color: white;
 	
@@ -342,13 +347,13 @@ svg {
 /* #536DFE */
 .btn-tarif {
 	margin-top:5%;
-	padding: 8%;
-	padding-top: 1%;
-	padding-bottom: 1%;
+	text-align: center;
+	padding-top: 1.6%;
+	padding-bottom: 1.6%;
 	background:#0062FF;
 	color: white;
-	font-size: 20px;
-	
+	font-size: 18px;
+	font-weight: 500;
 	border-radius: 3px;
 	border: 2px solid transparent;
 	transition: all 0.2s ease-in;
@@ -394,12 +399,11 @@ svg {
 	display: flex;
 	padding-top: 5%;
 	font-size: 20px;
-	min-height: 95vh;
+	min-height: 100vh;
 }
 
 .service-item {
 	border-radius: 5px;
-	transition:all 0.2s ease-in;
 	padding-top: 5%;
 	padding-bottom: 2%;
 }
@@ -408,13 +412,16 @@ svg {
 }
 .home-service-text h1 {
 	text-align: center;
+	color: #0062FF;
+	font-weight: 500;
+	font-size: 35px;
 }
 .s-i-content {
 	padding-top: 2%;
 	text-align: center;
 }
 .s-i-content img{
-	width: 4em;
+	width: 3em;
 }
 .s-i-content h4{
 	margin: 0;
@@ -423,12 +430,14 @@ svg {
 	float:left ;
 	color: #4955FF;
 	width: 100%;
-	font-size: 28px;
+	font-size: 24px;
+	font-weight: 500;
 }
 .service-item h6 {
 	color: #5F5F5F;
 	text-align: center;
-	font-size: 19px!important;
+	font-size: 17px!important;
+	font-weight: 400;
 }
 
 
@@ -447,6 +456,8 @@ svg {
 	padding:2%;
 	color: white;
 	text-align: center;
+	font-weight: 600;
+	font-size: 35px;
 }
 /*Анимация при навидение*/
 .site-item {
@@ -490,18 +501,20 @@ svg {
 }
 .site-item button.info {
     margin-top:2rem;
-	padding: 12%;
-	padding-top: 0.3%;
-	padding-bottom: 0.3%;
+	text-align: center;
+	width: 50%;
+	padding-top: 0.5%;
+	padding-bottom: 0.5%;
 	background: #0062FF;
 	color: white;
-	font-size: 20px;
+	font-size: 17px;
 	border-radius: 3px;
 	border: 2px solid transparent;
 	transition:all 0.1s ease-in-out;
 	outline: none!important;
 	opacity:0;
 	transform: translateY(50px);
+	font-weight: 500;
 }
 @media (max-width: 767px) {
 	.site-item button.info {
@@ -514,8 +527,8 @@ svg {
 }
 .site-item button.info:hover {
     outline: none!important;
-    background: #2196F3;
-	transition:all 0.1s ease-in-out;
+    background: #0077FF;
+	transition:all 0.2s ease;
 }
 
 
@@ -604,7 +617,8 @@ svg {
 .rate-in h1 {
 	color: #212121;
 	padding: 2%;
-	
+	font-weight: 600;
+	font-size: 35px;
 }
 .rate-service-item {
 	margin-top: 3%;
@@ -892,26 +906,25 @@ div.page-container-inner {
 }
 .button-top1 {
 	padding: 4px 4px;
-	color: #3f4fe0;
+	color: #304EFE;
 	background-color: transparent;
 	border:2px solid #3f4fe0;
 	font-size: 16px;
 	border-radius:3px;
 	outline: none;
 	bottom: 20px;
-	right: 40px;
+	right: 50px;
 	z-index: 99;
 	position: fixed;
 	display: none;
 	cursor: pointer;
-
+	transition: all 0.2s;
 }
 .button-top1 svg {
 	margin:0;
 }
 .button-top1:hover {
-	background: rgba(63, 79, 224, 1);
-	transition: all 0.2s;
+	background: #304EFE;
 	color: white;
 }
 .button-top1:focus {
